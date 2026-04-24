@@ -14,9 +14,9 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 cloudinary.config(
-    cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME", "dhdpw1twt"),
-    api_key=os.getenv("CLOUDINARY_API_KEY", "911564994891294"),
-    api_secret=os.getenv("CLOUDINARY_API_SECRET", "fDI2H2O8i_op4TVgZaMLb3SoSHU"),
+    cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.getenv("CLOUDINARY_API_KEY"),
+    api_secret=os.getenv("CLOUDINARY_API_SECRET"),
     secure=True,
 )
 
