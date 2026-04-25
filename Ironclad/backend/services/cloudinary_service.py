@@ -40,6 +40,7 @@ def upload_image(file_bytes: bytes, filename: str, mime_type: str = "") -> str:
     """
     Upload any file to Cloudinary and return the secure URL.
     Handles images, video, audio, and PDFs.
+    
     """
     resource_type = _get_resource_type(mime_type)
     # Sanitise public_id (Cloudinary doesn't like spaces/dots in public_id)
